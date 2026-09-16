@@ -19,7 +19,7 @@ body:
     attributes:
       label: Connectome and simulation
       description: Identify the measured dataset, scale, filtering policy, and neural model. Mark unknown details explicitly and cite reported counts.
-      value: |
+      placeholder: |
         Connectome:
         Neuron count:
         Connection / synapse count:
@@ -32,7 +32,7 @@ body:
     attributes:
       label: Inputs, outputs, and environment
       description: Explain how neural activity participates in the environment.
-      value: |
+      placeholder: |
         Input:
         Output:
         Environment:
@@ -65,5 +65,5 @@ body:
       options:
         - label: I searched the README and existing issues for duplicates.
           required: true
-        - label: This is an existing project using measured Drosophila connectome data, with inspectable technical evidence.
+        - label: This existing project meets the required scope in CONTRIBUTING.md, including measured Drosophila data, large-scale neural simulation, external input, action output, and inspectable evidence.
           required: true

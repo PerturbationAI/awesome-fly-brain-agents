@@ -8,17 +8,18 @@ The goal is not to collect every Drosophila project. It is to make the unusual w
 
 ## Before submitting
 
-Please search the README and existing issues first. Use the **Suggest a project** form under **Issues → New issue**; its source is [here](.github/ISSUE_TEMPLATE/suggest-project.yml).
+Please search the README and existing issues first, then use the [Suggest a project form](https://github.com/PerturbationAI/awesome-fly-brain-agents/issues/new?template=suggest-project.yml).
 
-A project is a strong fit for the main list when it satisfies most of the following:
+A project must meet the following requirements for the main list:
 
 1. Uses measured **Drosophila connectome data** such as MaleCNS or FlyWire.
 2. Runs at **whole-brain / whole-CNS or comparable large scale**, generally around 100k+ neurons.
 3. Actually simulates or propagates neural activity.
 4. Has an external input or sensory interface.
 5. Reads neural activity back out as actions, controls, or decisions.
-6. Preferably operates in a closed loop.
-7. Has public code, technical documentation, or inspectable evidence.
+6. Has public code, technical documentation, or inspectable evidence.
+
+A closed loop is preferred. Partial control experiments must clearly state what has been demonstrated and what remains untested.
 
 ## Not enough by itself
 
@@ -36,7 +37,7 @@ Only submit existing projects supported by inspectable evidence. Do not add want
 
 ## Required project information
 
-Please provide as much of this as possible:
+Provide the following details where available. Mark unknown values explicitly and include evidence for technical claims:
 
 ```text
 Project:
@@ -70,31 +71,13 @@ Do not use a social-media post as the only evidence for a strong technical claim
 
 ## How to describe claims
 
-Be precise and boring.
+Use precise descriptions and attribute reported results.
 
-Good:
-
-> The repository reports a retained MaleCNS graph of 166,700 neurons.
-
-Avoid:
-
-> This is literally a complete living fly brain.
-
-Good:
-
-> Neural activity is decoded into left / right steering actions.
-
-Avoid:
-
-> The fly understands how to drive.
-
-Good:
-
-> The project reports a trading integration; profitable learning has not been demonstrated.
-
-Avoid:
-
-> A fruit fly can beat the market.
+| Prefer | Avoid |
+|---|---|
+| The repository reports a retained MaleCNS graph of 166,700 neurons. | This is literally a complete living fly brain. |
+| Neural activity is decoded into left / right steering actions. | The fly understands how to drive. |
+| The project reports a trading integration; profitable learning has not been demonstrated. | A fruit fly can beat the market. |
 
 ## Neuron counts
 
@@ -165,7 +148,7 @@ Corrections are welcome, especially for:
 - misleading wording,
 - duplicate projects.
 
-Use the **Correction / metadata update** issue form if you do not want to open a PR; its source is [here](.github/ISSUE_TEMPLATE/correction.yml).
+Use the [Correction / metadata update form](https://github.com/PerturbationAI/awesome-fly-brain-agents/issues/new?template=correction.yml) if you do not want to open a PR.
 
 ## Style
 
