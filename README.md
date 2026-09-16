@@ -15,6 +15,38 @@ The question is simple:
 
 ---
 
+# 🎮 Games
+
+| Project | Connectome / scale | Environment | Closed loop | Notes |
+|---|---|---|:---:|---|
+| [nftechie/doomfly](https://github.com/nftechie/doomfly) | MaleCNS, full retained graph | Doom / ViZDoom | ✅ | Connectome-based spiking simulation drives an engineered Doom interface. The project explicitly cautions against interpreting this as validated fly vision or demonstrated learning. |
+| [ornata/fly](https://github.com/ornata/fly) | MaleCNS | Super Mario 64 | ✅ | Fly64 connects a MaleCNS-based brain model to SM64 through a visual-input → neural-network → controller loop. |
+| [blendi-remade/fly-brain-minecraft](https://github.com/blendi-remade/fly-brain-minecraft) | MaleCNS, repo reports 176,422 neurons | Minecraft | ✅ | Minecraft sensory events drive real sensory populations; descending and motor activity controls a fly mob. |
+| [michaelpersonal/flytype](https://github.com/michaelpersonal/flytype) | MaleCNS, repo reports 166,700 neurons | Typing + brick breaker | ✅ | Rendered pixels drive the connectome and neural activity is read back into actions. |
+| [MidTermDev/immortal-fruit-fly](https://github.com/MidTermDev/immortal-fruit-fly) | FlyWire, repo reports 139,248 neurons | Arena + Doom | ✅ | Whole-brain LIF simulation with embodied arena and Doom modes; also records state hashes on-chain. |
+
+---
+
+# 🤖 Robots, bodies & control
+
+| Project | Connectome / scale | Environment | Closed loop | Physical | Notes |
+|---|---|---|:---:|:---:|---|
+| [FutureJJ/ommatid](https://github.com/FutureJJ/ommatid) | MaleCNS, repo reports 165,122 CNS neurons + FlyVis visual frontend | Hexapod robot | ✅ | ✅ | Camera input reaches the model; descending and motor populations drive a six-legged robot. |
+| [MarkUnthank/flyhard](https://github.com/MarkUnthank/flyhard) | MaleCNS, repo reports 165,122 traced neurons | Simulated fly body + steering wheel + CARLA | 🧪 | ❌ | Connectome-based controller learns to physically operate a simulated steering wheel; full driving remains an experimental target. |
+| [rembish/fruit-fly](https://github.com/rembish/fruit-fly) | FlyWire, repo reports 139,255 neurons | Desktop environment | ✅ | ❌ | A desktop fly driven by a whole-brain LIF simulation; cursor / looming input is mapped into identified circuits. |
+
+---
+
+# 📈 Markets & trading
+
+> These are neural-interface experiments, **not evidence of profitable trading** and not financial advice.
+
+| Project | Connectome / scale | Environment | Closed loop | Notes |
+|---|---|---|:---:|---|
+| [nftechie/stonkfly](https://github.com/nftechie/stonkfly) | MaleCNS, repo reports 166,700 neurons / 25.6M connections | Coinbase market data + guarded trading actions | ✅ | Market state becomes sensory input; neural activity proposes buy / sell / hold. The project explicitly states that profitable learning has not been demonstrated. |
+
+---
+
 ## Scope
 
 ### Main-list projects should satisfy most of these
@@ -63,7 +95,7 @@ and
 
 **controls a game ≠ understands the game**
 
-Neuron counts also vary between projects because filtering and inclusion policies differ. Counts below are reported according to each project's public documentation and should not be assumed to be directly comparable.
+Neuron counts also vary between projects because filtering and inclusion policies differ. Counts in the list are reported according to each project's public documentation and should not be assumed to be directly comparable.
 
 ---
 
@@ -71,39 +103,7 @@ Neuron counts also vary between projects because filtering and inclusion policie
 
 - **Closed loop** — environment affects neural input and neural output affects the next environment state.
 - **Physical** — controls real hardware.
-- **Docs checked** — the description below was checked against the project's public repository documentation. It does **not** mean the experiment was independently reproduced.
-
----
-
-# 🎮 Games
-
-| Project | Connectome / scale | Environment | Closed loop | Notes |
-|---|---|---|:---:|---|
-| [nftechie/doomfly](https://github.com/nftechie/doomfly) | MaleCNS, full retained graph | Doom / ViZDoom | ✅ | Connectome-based spiking simulation drives an engineered Doom interface. The project explicitly cautions against interpreting this as validated fly vision or demonstrated learning. |
-| [ornata/fly](https://github.com/ornata/fly) | MaleCNS | Super Mario 64 | ✅ | Fly64 connects a MaleCNS-based brain model to SM64 through a visual-input → neural-network → controller loop. |
-| [blendi-remade/fly-brain-minecraft](https://github.com/blendi-remade/fly-brain-minecraft) | MaleCNS, repo reports 176,422 neurons | Minecraft | ✅ | Minecraft sensory events drive real sensory populations; descending and motor activity controls a fly mob. |
-| [michaelpersonal/flytype](https://github.com/michaelpersonal/flytype) | MaleCNS, repo reports 166,700 neurons | Typing + brick breaker | ✅ | Rendered pixels drive the connectome and neural activity is read back into actions. |
-| [MidTermDev/immortal-fruit-fly](https://github.com/MidTermDev/immortal-fruit-fly) | FlyWire, repo reports 139,248 neurons | Arena + Doom | ✅ | Whole-brain LIF simulation with embodied arena and Doom modes; also records state hashes on-chain. |
-
----
-
-# 🤖 Robots, bodies & control
-
-| Project | Connectome / scale | Environment | Closed loop | Physical | Notes |
-|---|---|---|:---:|:---:|---|
-| [FutureJJ/ommatid](https://github.com/FutureJJ/ommatid) | MaleCNS, repo reports 165,122 CNS neurons + FlyVis visual frontend | Hexapod robot | ✅ | ✅ | Camera input reaches the model; descending and motor populations drive a six-legged robot. |
-| [MarkUnthank/flyhard](https://github.com/MarkUnthank/flyhard) | MaleCNS, repo reports 165,122 traced neurons | Simulated fly body + steering wheel + CARLA | 🧪 | ❌ | Connectome-based controller learns to physically operate a simulated steering wheel; full driving remains an experimental target. |
-| [rembish/fruit-fly](https://github.com/rembish/fruit-fly) | FlyWire, repo reports 139,255 neurons | Desktop environment | ✅ | ❌ | A desktop fly driven by a whole-brain LIF simulation; cursor / looming input is mapped into identified circuits. |
-
----
-
-# 📈 Markets & trading
-
-> These are neural-interface experiments, **not evidence of profitable trading** and not financial advice.
-
-| Project | Connectome / scale | Environment | Closed loop | Notes |
-|---|---|---|:---:|---|
-| [nftechie/stonkfly](https://github.com/nftechie/stonkfly) | MaleCNS, repo reports 166,700 neurons / 25.6M connections | Coinbase market data + guarded trading actions | ✅ | Market state becomes sensory input; neural activity proposes buy / sell / hold. The project explicitly states that profitable learning has not been demonstrated. |
+- **Docs checked** — the project description was checked against the project's public repository documentation. It does **not** mean the experiment was independently reproduced.
 
 ---
 
