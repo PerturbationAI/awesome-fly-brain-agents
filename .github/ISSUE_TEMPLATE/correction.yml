@@ -1,0 +1,24 @@
+name: Correction / metadata update
+description: Report an incorrect claim, broken link, duplicate, or outdated project detail.
+title: "[Correction] "
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Affected project or section
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Current information and proposed correction
+      description: Quote the affected text and explain what should change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Link primary sources, or describe how to reproduce a broken link or other problem.
+    validations:
+      required: true

@@ -1,0 +1,69 @@
+name: Suggest a project
+description: Suggest an existing connectome-driven project with inspectable evidence.
+title: "[Project] "
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project name
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or technical documentation URL
+    validations:
+      required: true
+  - type: textarea
+    id: connectome
+    attributes:
+      label: Connectome and simulation
+      description: Identify the measured dataset, scale, filtering policy, and neural model. Mark unknown details explicitly and cite reported counts.
+      value: |
+        Connectome:
+        Neuron count:
+        Connection / synapse count:
+        Filtering policy:
+        Neural model:
+    validations:
+      required: true
+  - type: textarea
+    id: interface
+    attributes:
+      label: Inputs, outputs, and environment
+      description: Explain how neural activity participates in the environment.
+      value: |
+        Input:
+        Output:
+        Environment:
+        Learning / optimization:
+        Physical hardware:
+    validations:
+      required: true
+  - type: dropdown
+    id: closed-loop
+    attributes:
+      label: Does the environment feed back into neural input?
+      options:
+        - "Yes"
+        - "No"
+        - Partial
+        - Unclear
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and scope fit
+      description: Link primary sources supporting the claims and explain why the project belongs. Distinguish documented claims from independently reproduced results.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I searched the README and existing issues for duplicates.
+          required: true
+        - label: This is an existing project using measured Drosophila connectome data, with inspectable technical evidence.
+          required: true
