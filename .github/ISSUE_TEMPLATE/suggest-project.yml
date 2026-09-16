@@ -6,6 +6,8 @@ body:
     id: project
     attributes:
       label: Project name
+      description: For GitHub projects, use owner/repository so the owner is visible.
+      placeholder: nftechie/doomfly
     validations:
       required: true
   - type: input

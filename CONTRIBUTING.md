@@ -152,7 +152,7 @@ Use the [Correction / metadata update form](https://github.com/PerturbationAI/aw
 
 ## Style
 
-- Project names use their repository or official project name.
+- In the Project column, use the GitHub owner and repository name as the link text: `[owner/repository](https://github.com/owner/repository)` (for example, `[nftechie/doomfly](https://github.com/nftechie/doomfly)`). Keep the owner visible; do not shorten the label to only the project name.
 - Prefer one or two sentences per entry.
 - Use `repo reports ...` when a value has not been independently reproduced.
 - Avoid hype, anthropomorphism, and consciousness claims.
