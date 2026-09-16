@@ -87,13 +87,8 @@ Every runnable project must make additional assumptions about some combination o
 - time scaling,
 - missing or uncertain biological data.
 
-So:
-
-**real connectome ≠ reconstructed mind**
-
-and
-
-**controls a game ≠ understands the game**
+> **Real connectome ≠ reconstructed mind.**<br>
+> **Controls a game ≠ understands the game.**
 
 Neuron counts also vary between projects because filtering and inclusion policies differ. Counts in the list are reported according to each project's public documentation and should not be assumed to be directly comparable.
 
