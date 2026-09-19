@@ -18,6 +18,8 @@ A curated list of projects that put large-scale fruit-fly connectomes into an ac
 | [dohun1214/malecns-asteroids](https://github.com/dohun1214/malecns-asteroids) | MaleCNS, 166,700 neurons | Atari Asteroids | ✅ | Asteroid positions stimulate visual populations in a whole-brain LIF model; motor readouts steer escape or pursuit. Includes lesion and rewiring controls; firing and control timing use engineered rules. |
 | [seanphan/flyt3](https://github.com/seanphan/flyt3) | MaleCNS, 166,700 neurons | Tic-tac-toe | ✅ | Board state drives a frozen LIF connectome and a trained motor-spike readout selects moves. The play server also applies hand-written win/block overrides; gameplay is not solely a neural readout. |
 | [Reldnahc/pokefly](https://github.com/Reldnahc/pokefly) | MaleCNS, repo reports 166,700 neurons | Pokemon Red / PyBoy | ✅ | Screen pixels drive a connectome simulation with fixed motor-to-button mappings and experimental internal synaptic plasticity. Outcome rewards use game telemetry; useful screen-specific gameplay learning remains unestablished. |
+| [shantanugoel/fly-games](https://github.com/shantanugoel/fly-games) | MaleCNS, repo reports 166,700 neurons | Super Mario Bros. / Kung Fu / Doom | ✅ | Structured game facts stimulate a frozen spiking connectome; descending activity feeds a fitted readout or hand-written decoder. Only the readout is trained, and held-out imitation scores do not establish closed-loop game success. |
+| [almera-vs/malecns-pong-lab](https://github.com/almera-vs/malecns-pong-lab) | MaleCNS, repo reports 166,700 neurons | Pong with simulated limb-and-paddle control | ✅ | Pooled court pixels and joint feedback drive sparse spiking activity; tibia motor pools control engineered paddles. A three-seed pilot changed synaptic weights without improving held-out hit/miss counts. |
 
 ## 🤖 Robots, bodies & control
 
@@ -85,7 +87,7 @@ Neuron counts also vary between projects because filtering and inclusion policie
 - **✅** — a closed loop is documented; this does not establish successful learning or biological fidelity.
 - **🧪** — partial or experimental integration; see the entry's limitations.
 
-The original nine project descriptions were checked against public repository documentation on **2026-09-16**. Entries for `dohun1214/malecns-asteroids`, `seanphan/flyt3`, and `nsfm/fly-afterlife` were checked against documentation and control-loop source on **2026-09-17**. `Reldnahc/pokefly` was checked against documentation and control-loop source on **2026-09-18**. These are source reviews, not independent reproductions.
+The original nine project descriptions were checked against public repository documentation on **2026-09-16**. Entries for `dohun1214/malecns-asteroids`, `seanphan/flyt3`, and `nsfm/fly-afterlife` were checked against documentation and control-loop source on **2026-09-17**. `Reldnahc/pokefly` was checked against documentation and control-loop source on **2026-09-18**. `shantanugoel/fly-games` and `almera-vs/malecns-pong-lab` were checked against documentation and control-loop source on **2026-09-19**. These are source reviews, not independent reproductions.
 
 ## 🧪 Inclusion checklist
 
